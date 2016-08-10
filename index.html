@@ -5,8 +5,167 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="main-navigation-left">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+          </ul>
+          <div class="logo">
+            <a href="#"><img src="http://placehold.it/60x55" width="60" height="55" alt="" /></a>
+          </div>
+          <ul class="main-navigation-right">
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="index-image">
+        <a href="#"><img src="http://placehold.it/1200x500" width="1200" height="500" alt="" /></a>
+      </div>
+      <div class="index-content">
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="appeal">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+        </p>
+        <div class="reasons">
+          <section class="reasons-item">
+            <h2>Настоящий городок</h2>
+            <p class="reason-num">- №1 -</p>
+            <p class="reason-info">
+              Седона - не аттракцион для туристов, там течет своя жизнь.
+            </p>
+          </section>
+          <div class="reason-image">
+            <img src="http://placehold.it/800x250" width="800" height="250" alt="" />
+          </div>
+        </div>
+        <div class="recommendations">
+          <section class="recommendation-item">
+            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
+            <h2>Жилье</h2>
+            <p>
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </section>
+          <section class="recommendation-item">
+            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
+            <h2>Еда</h2>
+            <p>
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </section>
+          <section class="recommendation-item">
+            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
+            <h2>Сувениры</h2>
+            <p>
+              Не только китайского, но и местного производства!
+            </p>
+          </section>
+        </div>
+        <div class="reasons">
+          <div class="reason-image">
+            <img src="http://placehold.it/800x250" width="800" height="250" alt="" />
+          </div>
+          <section class="reasons-item">
+            <h2>Там есть мост дьявола</h2>
+            <p class="reason-num">- №2 -</p>
+            <p class="reason-info">
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
+          </section>
+        </div>
+        <div class="reasons">
+          <section class="reasons-item">
+            <h2>Небольшая площадь</h2>
+            <p class="reason-num">- №3 -</p>
+            <p class="reason-info">
+              Все достопримечательности находятся очень близко
+            </p>
+          </section>
+          <section class="reasons-item">
+            <h2>Красивая дорога</h2>
+            <p class="reason-num">- №4 -</p>
+            <p class="reason-info">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </section>
+          <section class="reasons-item">
+            <h2>Мало туристов</h2>
+            <p class="reason-num">- №5 -</p>
+            <p class="reason-info">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+          </section>
+        </div>
+        <div class="hotels">
+          <div class="hotels-search">
+            <h3>Заинтересовались?</h3>
+            <p>
+              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <button class="btn btn-hotel" type="button">Поиск гостиницы в седоне</button>
+          </div>
+          <div class="hotels-map">
+            <img src="http://placehold.it/1200x600" width="1200" height="600" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-hashtag">
+        #visitsedona
+      </section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-twitter">Twitter</a>
+        <a class="social-btn social-btn-facebook">Facebook</a>
+        <a class="social-btn social-btn-youtube">Youtube</a>
+      </section>
+      <section class="footer-copyright">
+        Website by <img src="http://placehold.it/100x20" width="100" height="20" alt="" />
+      </section>
+    </footer>
+    <form class="modal booking">
+      <table>
+        <tr>
+          <td>
+            Дата заезда
+          </td>
+          <td colspan="3">
+            <input type="text" name="arrival_date" value="24 апреля 2016" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Дата выезда
+          </td>
+          <td colspan="3">
+            <input type="text" name="departure_date" value="4 июля 2016" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Взрослые
+          </td>
+          <td>
+            <button class="btn btn-decrease" type="button">-</button>
+            <input type="text" name="adults_count"/>
+            <button class="btn btn-increase" type="button">+</button>
+          </td>
+          <td>
+            Дети
+          </td>
+          <td>
+            <button class="btn btn-decrease" type="button">-</button>
+            <input type="text" name="children_count"/>
+            <button class="btn btn-increase" type="button">+</button>
+          </td>
+        </tr>
+      </table>
+      <button class="btn btn-hotel-search" type="submit">Найти</button>
+    </form>
   </body>
 </html>
