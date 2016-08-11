@@ -7,19 +7,23 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
-          <ul class="main-navigation-left">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-          </ul>
-          <div class="logo">
+        <ul class="main-navigation">
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="logo">
             <a href="#"><img src="http://placehold.it/60x55" width="60" height="55" alt="" /></a>
-          </div>
-          <ul class="main-navigation-right">
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
-          </ul>
-        </nav>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="container">
@@ -52,11 +56,11 @@
         <div class="catalog-header">
           <span class="catalog-found-count">Найдено: 3</span>
           <span class="catalog-sort">Сортировка</span>
-          <span class="catalog-sort-control active">По цене</span>
-          <span class="catalog-sort-control">По типу</span>
-          <span class="catalog-sort-control">По рейтингу</span>
-          <span class="sort-up"></span>
-          <span class="sort-down active"></span>
+          <a class="sort-control active" href="#">По цене</a>
+          <a class="sort-control" href="#">По типу</a>
+          <a class="sort-control" href="#">По рейтингу</a>
+          <a class="sort-up" href="#">По возрастанию</a>
+          <a class="sort-down active" href="#">По убыванию</a>
         </div>
         <article class="catalog-item">
           <img src="http://placehold.it/140x90" width="140" height="90" alt="" />
