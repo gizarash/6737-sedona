@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +16,7 @@
             <a href="#">Фото и видео</a>
           </li>
           <li class="logo">
-            <a href="#"><img src="http://placehold.it/60x55" width="60" height="55" alt="" /></a>
+            <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип" /></a>
           </li>
           <li>
             <a href="#">Карта штата</a>
@@ -28,7 +29,7 @@
     </header>
     <main class="container">
       <div class="index-image">
-        <img src="http://placehold.it/1200x500" width="1200" height="500" alt="" />
+        <img src="img/sedona_promo.jpg" width="1200" height="564" alt="Седона" />
       </div>
       <div class="index-content">
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -44,26 +45,24 @@
             </p>
           </section>
           <div class="reason-image">
-            <img src="http://placehold.it/800x250" width="800" height="250" alt="" />
+            <img src="img/sedona_photo1.jpg" width="800" height="256" alt="Фото Седона" />
           </div>
         </div>
         <div class="recommendations">
           <section class="recommendation-item">
-            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
+            <!-- в .recommendation-item убрал img, т.к. мне кажется, что их лучше фоном сделать-->
             <h2>Жилье</h2>
             <p>
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </section>
           <section class="recommendation-item">
-            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
             <h2>Еда</h2>
             <p>
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </section>
           <section class="recommendation-item">
-            <img src="http://placehold.it/65x80" width="65" height="80" alt="" />
             <h2>Сувениры</h2>
             <p>
               Не только китайского, но и местного производства!
@@ -72,7 +71,7 @@
         </div>
         <div class="reasons">
           <div class="reason-image">
-            <img src="http://placehold.it/800x250" width="800" height="250" alt="" />
+            <img src="img/sedona_photo2.jpg" width="800" height="256" alt="Фото Седона" />
           </div>
           <section class="reasons-item">
             <h2>Там есть мост дьявола</h2>
@@ -114,7 +113,7 @@
             <button class="btn btn-hotel" type="button">Поиск гостиницы в седоне</button>
           </div>
           <div class="hotels-map">
-            <img src="http://placehold.it/1200x600" width="1200" height="600" alt="" />
+            <img src="img/map.jpg" width="1200" height="593" alt="" />
           </div>
         </div>
       </div>
@@ -129,7 +128,8 @@
         <a class="social-btn social-btn-youtube">Youtube</a>
       </section>
       <section class="footer-copyright">
-        Website by <img src="http://placehold.it/100x20" width="100" height="20" alt="" />
+        <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
+        Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
       </section>
     </footer>
     <form class="modal booking">
