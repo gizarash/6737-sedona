@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -32,12 +33,14 @@
         <img src="img/sedona_promo.jpg" width="1200" height="564" alt="Седона" />
       </div>
       <div class="index-content">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="appeal">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-        </p>
+        <div class="intro">
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="appeal">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+          </p>
+        </div>
         <div class="reasons">
-          <section class="reasons-item">
+          <section class="reason-item">
             <h2>Настоящий городок</h2>
             <p class="reason-num">- №1 -</p>
             <p class="reason-info">
@@ -73,7 +76,7 @@
           <div class="reason-image">
             <img src="img/sedona_photo2.jpg" width="800" height="256" alt="Фото Седона" />
           </div>
-          <section class="reasons-item">
+          <section class="reason-item">
             <h2>Там есть мост дьявола</h2>
             <p class="reason-num">- №2 -</p>
             <p class="reason-info">
@@ -82,21 +85,21 @@
           </section>
         </div>
         <div class="reasons">
-          <section class="reasons-item">
+          <section class="reason-item">
             <h2>Небольшая площадь</h2>
             <p class="reason-num">- №3 -</p>
             <p class="reason-info">
               Все достопримечательности находятся очень близко
             </p>
           </section>
-          <section class="reasons-item">
+          <section class="reason-item">
             <h2>Красивая дорога</h2>
             <p class="reason-num">- №4 -</p>
             <p class="reason-info">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </section>
-          <section class="reasons-item">
+          <section class="reason-item">
             <h2>Мало туристов</h2>
             <p class="reason-num">- №5 -</p>
             <p class="reason-info">
@@ -119,18 +122,20 @@
       </div>
     </main>
     <footer class="main-footer">
-      <section class="footer-hashtag">
-        #visitsedona
-      </section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-twitter">Twitter</a>
-        <a class="social-btn social-btn-facebook">Facebook</a>
-        <a class="social-btn social-btn-youtube">Youtube</a>
-      </section>
-      <section class="footer-copyright">
-        <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
-        Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
-      </section>
+      <div class="container">
+        <section class="footer-hashtag">
+          #visitsedona
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-twitter">Twitter</a>
+          <a class="social-btn social-btn-facebook">Facebook</a>
+          <a class="social-btn social-btn-youtube">Youtube</a>
+        </section>
+        <section class="footer-copyright">
+          <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
+          Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
     </footer>
     <form class="modal booking">
       <table>

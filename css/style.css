@@ -5,6 +5,7 @@ body {
   font-weight: normal;
   font-family: "PT Sans";
   text-transform: uppercase;
+  background: #f2f2f2;
 }
 h1 {
   font-size: 21px;
@@ -17,4 +18,76 @@ h2 {
   line-height: 21px;
   color: #000000;
   font-weight: bold;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+}
+.index-image {
+  margin-bottom: 60px;
+}
+.intro {
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.reasons {
+  font-size: 0;
+  line-height: 0;
+}
+.reason-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+}
+.reason-image {
+  display: inline-block;
+  width: 800px;
+}
+.recommendations {
+  font-size: 0;
+}
+.recommendation-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+}
+.accommodation::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+.accommodation-infrastructure {
+  float: left;
+  width: 240px;
+}
+.accommodation-type {
+  float: left;
+  width: 240px;
+}
+.accommodation-price {
+  float: right;
+  width: 340px;
+}
+.catalog-item::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+.catalog-item-img {
+  float: left;
+}
+.catalog-item-info {
+  float: left;
+}
+.catalog-item-other {
+  float: right;
 }
