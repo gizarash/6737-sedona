@@ -32,11 +32,9 @@
         <fieldset class="accommodation-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
-            <li>
-              <label><input type="checkbox" name="pool" checked />Бассейн</label>
-              <label><input type="checkbox" name="parking" />Парковка</label>
-              <label><input type="checkbox" name="wifi" />Wi-fi</label>
-            </li>
+            <li><label><input type="checkbox" name="pool" checked />Бассейн</label></li>
+            <li><label><input type="checkbox" name="parking" />Парковка</label></li>
+            <li><label><input type="checkbox" name="wifi" />Wi-fi</label></li>
           </ul>
         </fieldset>
         <fieldset class="accommodation-type">
@@ -64,71 +62,91 @@
           <a class="sort-down active" href="#">По убыванию</a>
         </div>
         <article class="catalog-item">
-          <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Amara Resort &amp; Spa" />
-          <h2>Amara Resort &amp; Spa</h2>
-          <div>
-            <span class="catalog-item-type">Гостиница</span>
-            <span class="catalog-item-price">от 3500 р.</span>
+          <div class="catalog-item-img">
+            <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Amara Resort &amp; Spa" />
           </div>
-          <div class="catalog-item-buttons">
-            <a class="btn btn-more" href="#">Подробнее</a>
-            <a class="btn btn-book" href="#">Забронировать</a>
+          <div class="catalog-item-info">
+            <h2>Amara Resort &amp; Spa</h2>
+            <div>
+              <span class="catalog-item-type">Гостиница</span>
+              <span class="catalog-item-price">от 3500 р.</span>
+            </div>
+            <div class="catalog-item-buttons">
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <a class="btn btn-book" href="#">Забронировать</a>
+            </div>
           </div>
-          <div class="catalog-item-stars">
-          </div>
-          <div class="catalog-item-rating">
-            Рейтинг: 8,5
-          </div>
-        </article>
-        <article class="catalog-item">
-          <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn" />
-          <h2>Desert Quail Inn</h2>
-          <div>
-            <span class="catalog-item-type">Мотель</span>
-            <span class="catalog-item-price">от 2000 р.</span>
-          </div>
-          <div class="catalog-item-buttons">
-            <a class="btn btn-more" href="#">Подробнее</a>
-            <a class="btn btn-book" href="#">Забронировать</a>
-          </div>
-          <div class="catalog-item-stars">
-          </div>
-          <div class="catalog-item-rating">
-            Рейтинг: 8,9
+          <div class="catalog-item-other">
+            <div class="catalog-item-stars">
+            </div>
+            <div class="catalog-item-rating">
+              Рейтинг: 8,5
+            </div>
           </div>
         </article>
         <article class="catalog-item">
-          <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo" />
-          <h2>Villas at Poco Diablo</h2>
-          <div>
-            <span class="catalog-item-type">Апартаменты</span>
-            <span class="catalog-item-price">от 4000 р.</span>
+          <div class="catalog-item-img">
+            <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn" />
           </div>
-          <div class="catalog-item-buttons">
-            <a class="btn btn-more" href="#">Подробнее</a>
-            <a class="btn btn-book" href="#">Забронировать</a>
+          <div class="catalog-item-info">
+            <h2>Desert Quail Inn</h2>
+            <div>
+              <span class="catalog-item-type">Мотель</span>
+              <span class="catalog-item-price">от 2000 р.</span>
+            </div>
+            <div class="catalog-item-buttons">
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <a class="btn btn-book" href="#">Забронировать</a>
+            </div>
           </div>
-          <div class="catalog-item-stars">
+          <div class="catalog-item-other">
+            <div class="catalog-item-stars">
+            </div>
+            <div class="catalog-item-rating">
+              Рейтинг: 8,9
+            </div>
           </div>
-          <div class="catalog-item-rating">
-            Рейтинг: 9,2
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item-img">
+            <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo" />
+          </div>
+          <div class="catalog-item-info">
+            <h2>Villas at Poco Diablo</h2>
+            <div>
+              <span class="catalog-item-type">Апартаменты</span>
+              <span class="catalog-item-price">от 4000 р.</span>
+            </div>
+            <div class="catalog-item-buttons">
+              <a class="btn btn-more" href="#">Подробнее</a>
+              <a class="btn btn-book" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="catalog-item-other">
+            <div class="catalog-item-stars">
+            </div>
+            <div class="catalog-item-rating">
+              Рейтинг: 9,2
+            </div>
           </div>
         </article>
       </section>
     </main>
     <footer class="main-footer">
-      <section class="footer-hashtag">
-        #visitsedona
-      </section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-twitter">Twitter</a>
-        <a class="social-btn social-btn-facebook">Facebook</a>
-        <a class="social-btn social-btn-youtube">Youtube</a>
-      </section>
-      <section class="footer-copyright">
-        <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
-        Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
-      </section>
+      <div class="container">
+        <section class="footer-hashtag">
+          #visitsedona
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-twitter">Twitter</a>
+          <a class="social-btn social-btn-facebook">Facebook</a>
+          <a class="social-btn social-btn-youtube">Youtube</a>
+        </section>
+        <section class="footer-copyright">
+          <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
+          Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
