@@ -21,7 +21,7 @@
             <a href="#">Фото и видео</a>
           </li>
           <li class="right">
-            <a href="#">Гостиницы</a>
+            <a class="active" href="#">Гостиницы</a>
           </li>
           <li class="right">
             <a href="#">Карта штата</a>
@@ -34,34 +34,34 @@
         <fieldset class="accommodation-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
-            <li><label><input type="checkbox" name="pool" checked />Бассейн</label></li>
-            <li><label><input type="checkbox" name="parking" />Парковка</label></li>
-            <li><label><input type="checkbox" name="wifi" />Wi-fi</label></li>
+            <li><input type="checkbox" name="pool" id="chk_pool" checked /><label for="chk_pool">Бассейн</label></li>
+            <li><input type="checkbox" name="parking" id="chk_parking" /><label for="chk_parking">Парковка</label></li>
+            <li><input type="checkbox" name="wifi" id="chk_wifi" /><label for="chk_wifi">Wi-fi</label></li>
           </ul>
         </fieldset>
         <fieldset class="accommodation-type">
           <legend>Тип жилья:</legend>
           <ul>
-            <li><label><input type="checkbox" name="hotel" checked />Гостиница</label></li>
-            <li><label><input type="checkbox" name="motel" checked />Мотель</label></li>
-            <li><label><input type="checkbox" name="apartments" checked />Апартаменты</label></li>
+            <li><input type="checkbox" name="hotel" id="chk_hotel" checked /><label for="chk_hotel">Гостиница</label></li>
+            <li><input type="checkbox" name="motel" id="chk_motel" checked /><label for="chk_motel">Мотель</label></li>
+            <li><input type="checkbox" name="apartments" id="chk_apartments" checked /><label for="chk_apartments">Апартаменты</label></li>
           </ul>
         </fieldset>
         <fieldset class="accommodation-price">
           <legend>Стоимость в сутки(р):</legend>
           <!-- TODO: finish after a screencast -->
-          <button type="submit">Показать</button>
+          <button class="btn btn-filter" type="submit">Показать</button>
         </fieldset>
       </form>
       <section class="catalog">
         <div class="catalog-header">
           <span class="catalog-found-count">Найдено: 3</span>
-          <span class="catalog-sort">Сортировка</span>
+          <span class="catalog-sort">Сортировка:</span>
           <a class="sort-control active" href="#">По цене</a>
           <a class="sort-control" href="#">По типу</a>
           <a class="sort-control" href="#">По рейтингу</a>
-          <a class="sort-up" href="#">По возрастанию</a>
-          <a class="sort-down active" href="#">По убыванию</a>
+          <a class="sort-dir icon-down-dir active" href="#"></a>
+          <a class="sort-dir icon-up-dir" href="#"></a>
         </div>
         <article class="catalog-item">
           <div class="catalog-item-img">
@@ -80,6 +80,10 @@
           </div>
           <div class="catalog-item-other">
             <div class="catalog-item-stars">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
             </div>
             <div class="catalog-item-rating">
               Рейтинг: 8,5
@@ -92,7 +96,7 @@
           </div>
           <div class="catalog-item-info">
             <h2>Desert Quail Inn</h2>
-            <div>
+            <div class="catalog-item-text">
               <span class="catalog-item-type">Мотель</span>
               <span class="catalog-item-price">от 2000 р.</span>
             </div>
@@ -103,6 +107,8 @@
           </div>
           <div class="catalog-item-other">
             <div class="catalog-item-stars">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
             </div>
             <div class="catalog-item-rating">
               Рейтинг: 8,9
@@ -126,6 +132,9 @@
           </div>
           <div class="catalog-item-other">
             <div class="catalog-item-stars">
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
+              <i class="icon-star"></i>
             </div>
             <div class="catalog-item-rating">
               Рейтинг: 9,2
@@ -140,13 +149,12 @@
           #visitsedona
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter">Twitter</a>
-          <a class="social-btn social-btn-facebook">Facebook</a>
-          <a class="social-btn social-btn-youtube">Youtube</a>
+          <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
-          <!-- Поменял img на a, что бы картинку в фоне можно было бы менять при наведении/клике-->
-          Website by <a class="academy" href="http://htmlacademy.ru">HTML Academy</a>
+          Website by <a class="academy" href="http://htmlacademy.ru"><i class="sprite sprite-academy_logo"></i></a>
         </section>
       </div>
     </footer>
