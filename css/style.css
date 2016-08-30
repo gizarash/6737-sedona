@@ -327,12 +327,21 @@ img {
   width: 346px;
   height: 38px;
   box-sizing: border-box;
-  padding-left: 14px;
+  padding-left: 12px;
   padding-right: 38px;
   border-width: 0;
   font-size: 14px;
+  border: 2px solid transparent;
   background-color: #f2f2f2;
   text-transform: uppercase;
+}
+.booking-date:hover {
+  background-color: #ebebeb;
+}
+.booking-date:active,.booking-date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 .icon-calendar {
   position: absolute;
@@ -359,6 +368,14 @@ img {
   border-width: 0;
   background-color: #f2f2f2;
   text-align: center;
+}
+.modal-booking-counter:hover {
+  background-color: #ebebeb;
+}
+.modal-booking-counter:active,.modal-booking-counter:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 .btn-qty {
   display: inline-block;
@@ -746,6 +763,16 @@ input[type="checkbox"]:disabled + label::before {
   margin-bottom: 8px;
   font-size: 21px;
   font-weight: bold;
+}
+.catalog-item-link {
+  text-decoration: none;
+  color: #000000;
+}
+.catalog-item-link:hover {
+  color: #81b3d2;
+}
+.catalog-item-link:active {
+  color: #cacaca;
 }
 .catalog-item-type, .catalog-item-price {
   display: inline-block;
