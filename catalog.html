@@ -11,17 +11,17 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип" /></a>
+          <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип" /></a>
         </div>
         <ul class="main-navigation">
           <li class="left">
-            <a href="#">Информация</a>
+            <a href="index.html">Информация</a>
           </li>
           <li class="left">
             <a href="#">Фото и видео</a>
           </li>
           <li class="right">
-            <a class="active" href="#">Гостиницы</a>
+            <a class="active">Гостиницы</a>
           </li>
           <li class="right">
             <a href="#">Карта штата</a>
@@ -30,8 +30,8 @@
       </div>
     </header>
     <main class="container">
-      <form class="accommodation">
-        <fieldset class="accommodation-infrastructure">
+      <form class="filter">
+        <fieldset class="filter-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li><input type="checkbox" name="pool" id="chk_pool" checked /><label for="chk_pool">Бассейн</label></li>
@@ -39,7 +39,7 @@
             <li><input type="checkbox" name="wifi" id="chk_wifi" /><label for="chk_wifi">Wi-fi</label></li>
           </ul>
         </fieldset>
-        <fieldset class="accommodation-type">
+        <fieldset class="filter-type">
           <legend>Тип жилья:</legend>
           <ul>
             <li><input type="checkbox" name="hotel" id="chk_hotel" checked /><label for="chk_hotel">Гостиница</label></li>
@@ -47,9 +47,19 @@
             <li><input type="checkbox" name="apartments" id="chk_apartments" checked /><label for="chk_apartments">Апартаменты</label></li>
           </ul>
         </fieldset>
-        <fieldset class="accommodation-price">
-          <legend>Стоимость в сутки(р):</legend>
-          <!-- TODO: finish after a screencast -->
+        <fieldset class="filter-range">
+          <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0" /></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000" /></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
           <button class="btn btn-filter" type="submit">Показать</button>
         </fieldset>
       </form>
@@ -78,16 +88,14 @@
               <a class="btn btn-book" href="#">Забронировать</a>
             </div>
           </div>
-          <div class="catalog-item-other">
-            <div class="catalog-item-stars">
-              <i class="icon-star"></i>
-              <i class="icon-star"></i>
-              <i class="icon-star"></i>
-              <i class="icon-star"></i>
-            </div>
-            <div class="catalog-item-rating">
-              Рейтинг: 8,5
-            </div>
+          <div class="catalog-item-stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <div class="catalog-item-rating">
+            Рейтинг: 8,5
           </div>
         </article>
         <article class="catalog-item">
@@ -149,9 +157,9 @@
           #visitsedona
         </section>
         <section class="footer-social">
-          <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
-          <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
-          <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
+          <a class="social-btn" href="#">Twitter <span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#">Youtube <span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
           Website by <a class="academy" href="http://htmlacademy.ru"><i class="sprite sprite-academy_logo"></i></a>

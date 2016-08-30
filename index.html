@@ -11,17 +11,17 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип" /></a>
+          <a><img src="img/logo.png" width="138" height="70" alt="Логотип" /></a>
         </div>
         <ul class="main-navigation">
           <li class="left">
-            <a href="#">Информация</a>
+            <a class="active">Информация</a>
           </li>
           <li class="left">
             <a href="#">Фото и видео</a>
           </li>
           <li class="right">
-            <a href="#">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
           <li class="right">
             <a href="#">Карта штата</a>
@@ -31,19 +31,18 @@
     </header>
     <main class="container">
       <div class="index-image">
-        <img src="img/sedona_promo.jpg" width="1200" height="564" alt="Седона" />
+        <img src="img/sedona_promo.jpg" width="1200" height="508" alt="Седона" />
       </div>
       <div class="index-content">
         <div class="intro">
-          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="appeal">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </div>
         <div class="reasons light-blue-bg">
           <section class="reason-item">
-            <h2>Настоящий<br />
-              городок</h2>
+            <h2>Настоящий городок</h2>
             <p class="reason-num">— №1 —</p>
             <p class="reason-info">
               Седона — не аттракцион для туристов, там течет своя жизнь.
@@ -81,8 +80,7 @@
             <img src="img/sedona_photo2.jpg" width="800" height="256" alt="Фото Седона" />
           </div>
           <section class="reason-item">
-            <h2>Там есть<br />
-              мост дьявола</h2>
+            <h2>Там есть мост дьявола</h2>
             <p class="reason-num">— №2 —</p>
             <p class="reason-info">
               Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -91,26 +89,21 @@
         </div>
         <div class="reasons light-gray-bg">
           <section class="reason-item reason-item-bottom">
-            <h2>Небольшая<br />
-              площадь</h2>
+            <h2>Небольшая площадь</h2>
             <p class="reason-num">— №3 —</p>
             <p class="reason-info">
-              Все достопримечательности<br />
-              находятся очень близко
+              Все достопримечательности находятся очень близко
             </p>
           </section>
           <section class="reason-item reason-item-bottom">
-            <h2>Красивая<br />
-              дорога</h2>
+            <h2>Красивая дорога</h2>
             <p class="reason-num">— №4 —</p>
             <p class="reason-info">
-              Ехать в Седону из Лас-Вегаса совсем<br />
-              не скучно!
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </section>
           <section class="reason-item reason-item-bottom">
-            <h2>Мало<br />
-              туристов</h2>
+            <h2>Мало туристов</h2>
             <p class="reason-num">— №5 —</p>
             <p class="reason-info">
               Большинство едет в Гранд Каньон и толпится там
@@ -129,44 +122,30 @@
           <div class="hotels-map">
             <img src="img/map.jpg" width="1200" height="593" alt="" />
             <form class="modal modal-booking">
-              <table>
-                <tr>
-                  <td class="booking-small-cell">
-                    <span>Дата заезда:</span>
-                  </td>
-                  <td class="booking-big-cell">
-                    <input class="booking-date" type="text" name="arrival_date" value="24 апреля 2016" />
-                    <i class="icon-calendar"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="booking-small-cell">
-                    <span>Дата выезда:</span>
-                  </td>
-                  <td class="booking-big-cell">
-                    <input class="booking-date" type="text" name="departure_date" value="4 июля 2016" />
-                    <i class="icon-calendar"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="booking-small-cell">
-                    <span>Взрослые:</span>
-                  </td>
-                  <td class="booking-big-cell">
-                    <div class="booking-adults-count">
-                      <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
-                      <input class="modal-booking-counter" type="text" name="adults_count" value="2"/>
-                      <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
-                    </div>
-                    <span class="booking-children">Дети:</span>
-                    <div class="booking-children-count">
-                      <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
-                      <input class="modal-booking-counter" type="text" name="children_count" value="0"/>
-                      <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+              <div class="booking-row">
+                <label for="arrival_date">Дата заезда: </label>
+                <input class="booking-date" type="text" name="arrival_date" id="arrival_date" value="24 апреля 2016" />
+                <button class="btn icon-calendar" type="button"></button>
+              </div>
+              <div class="booking-row">
+                <label for="departure_date" >Дата выезда:</label>
+                <input class="booking-date" type="text" name="departure_date" id="departure_date" value="4 июля 2016" />
+                <button class="btn icon-calendar" type="button"></button>
+              </div>
+              <div class="booking-row">
+                <label for="adults_count">Взрослые:</label>
+                <div class="booking-count-block">
+                  <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
+                  <input class="modal-booking-counter" type="text" name="adults_count" id="adults_count" value="2"/>
+                  <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
+                </div>
+                <label class="right" for="children_count">Дети:</label>
+                <div class="booking-count-block right">
+                  <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
+                  <input class="modal-booking-counter" type="text" name="children_count" id="children_count" value="0"/>
+                  <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
+                </div>
+              </div>
               <button class="btn btn-hotel-search" type="submit">Найти</button>
             </form>
           </div>
@@ -179,12 +158,12 @@
           #visitsedona
         </section>
         <section class="footer-social">
-          <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
-          <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
-          <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
+          <a class="social-btn" href="#">Twitter <span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#">Youtube <span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
-          Website by <a class="academy" href="http://htmlacademy.ru"><i class="sprite sprite-academy_logo"></i></a>
+          Website by<a class="academy" href="http://htmlacademy.ru"><i class="sprite sprite-academy_logo"></i></a>
         </section>
       </div>
     </footer>
