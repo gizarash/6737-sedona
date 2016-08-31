@@ -158,6 +158,10 @@ img {
   background-color: #eeeeee;
 }
 .reasons {
+  /* for correct form move out animation*/
+  position: relative;
+  z-index: 10;
+
   font-size: 0;
   line-height: 0;
 }
@@ -243,6 +247,12 @@ img {
   height: 72px;
   background-position: -5px -171px;
 }
+.hotels {
+  /* for correct form move out animation*/
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+}
 .hotels-search {
   width: 450px;
   padding-top: 53px;
@@ -290,13 +300,26 @@ img {
 .hotels-map {
   position: relative;
 }
+@keyframes form-appear {
+  0%   {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .modal {
   display: none;
 }
 .modal-show {
   display: block;
+  animation-name: form-appear;
+  animation-duration: 1s;
 }
 .modal-booking {
+  /* for correct form move out animation*/
+  z-index: 1;
+
   position: absolute;
   top: 0;
   left: 50%;
@@ -368,7 +391,7 @@ img {
   width: 38px;
   height: 38px;
   font-size: 14px;
-  border-width: 0;
+  border: 2px solid transparent;
   background-color: #f2f2f2;
   text-align: center;
 }
@@ -433,6 +456,9 @@ img {
 .btn-hotel-search:active {
   background-color: #5496bd;
   color: #88b6d1;
+}
+.input-error {
+  border-color: rgba(255, 0, 0, 0.5);;
 }
 .main-footer {
   font-size: 0;

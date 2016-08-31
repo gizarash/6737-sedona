@@ -119,36 +119,36 @@
             </p>
           </div>
           <a class="btn btn-hotel" href="#">Поиск гостиницы в седоне</a>
-          <div class="hotels-map">
-            <img src="img/map.jpg" width="1200" height="593" alt="" />
-            <form class="modal modal-booking">
-              <div class="booking-row">
-                <label for="arrival_date">Дата заезда: </label>
-                <input class="booking-date" type="text" name="arrival_date" id="arrival_date" value="24 апреля 2016" />
-                <button class="btn icon-calendar" type="button"></button>
+        </div>
+        <div class="hotels-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d74078.16821524662!2d-111.76579004773627!3d34.86066341666826!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1472664689789" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <form class="modal modal-booking">
+            <div class="booking-row">
+              <label for="arrival_date">Дата заезда: </label>
+              <input class="booking-date" type="text" name="arrival_date" id="arrival_date" value="24 апреля 2016" />
+              <button class="btn icon-calendar" type="button"></button>
+            </div>
+            <div class="booking-row">
+              <label for="departure_date" >Дата выезда:</label>
+              <input class="booking-date" type="text" name="departure_date" id="departure_date" value="4 июля 2016" />
+              <button class="btn icon-calendar" type="button"></button>
+            </div>
+            <div class="booking-row">
+              <label for="adults_count">Взрослые:</label>
+              <div class="booking-count-block">
+                <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
+                <input class="modal-booking-counter" type="text" name="adults_count" id="adults_count" value="2"/>
+                <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
               </div>
-              <div class="booking-row">
-                <label for="departure_date" >Дата выезда:</label>
-                <input class="booking-date" type="text" name="departure_date" id="departure_date" value="4 июля 2016" />
-                <button class="btn icon-calendar" type="button"></button>
+              <label class="right" for="children_count">Дети:</label>
+              <div class="booking-count-block right">
+                <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
+                <input class="modal-booking-counter" type="text" name="children_count" id="children_count" value="0"/>
+                <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
               </div>
-              <div class="booking-row">
-                <label for="adults_count">Взрослые:</label>
-                <div class="booking-count-block">
-                  <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
-                  <input class="modal-booking-counter" type="text" name="adults_count" id="adults_count" value="2"/>
-                  <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
-                </div>
-                <label class="right" for="children_count">Дети:</label>
-                <div class="booking-count-block right">
-                  <button class="btn btn-qty" type="button"><span class="icon-minus"></span></button>
-                  <input class="modal-booking-counter" type="text" name="children_count" id="children_count" value="0"/>
-                  <button class="btn btn-qty" type="button"><span class="icon-plus"></span></button>
-                </div>
-              </div>
-              <button class="btn btn-hotel-search" type="submit">Найти</button>
-            </form>
-          </div>
+            </div>
+            <button class="btn btn-hotel-search" type="submit">Найти</button>
+          </form>
         </div>
       </div>
     </main>
@@ -167,36 +167,6 @@
         </section>
       </div>
     </footer>
-    <script>
-      var hotelBtn = document.querySelector(".btn-hotel");
-      var hotelSearchModal = document.querySelector(".modal-booking");
-      var arriveDateField = hotelSearchModal.querySelector("#arrival_date");
-      var departDateField = hotelSearchModal.querySelector("#departure_date");
-      var adultsCountField = hotelSearchModal.querySelector("#adults_count");
-      var childrenCountField = hotelSearchModal.querySelector("#children_count");
-      var storageAdultsCount = localStorage.getItem("adultsCount");
-      var storageChildrenCount = localStorage.getItem("childrenCount");
-
-      hotelBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        hotelSearchModal.classList.toggle("modal-show");
-        if (storageAdultsCount) {
-          adultsCountField.value = storageAdultsCount;
-        }
-        if (storageChildrenCount) {
-          childrenCountField.value = storageChildrenCount;
-        }
-      });
-
-      hotelSearchModal.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (!arriveDateField.value || !departDateField.value || !adultsCountField.value || !childrenCountField.value) {
-          console.log("Need to fill all fields");
-        } else {
-          localStorage.setItem("adultsCount", adultsCountField.value);
-          localStorage.setItem("childrenCount", childrenCountField.value);
-        }
-      });
-    </script>
+    <script src="js/modal-booking.js"></script>
   </body>
 </html>
