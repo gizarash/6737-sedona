@@ -291,6 +291,9 @@ img {
   position: relative;
 }
 .modal {
+  display: none;
+}
+.modal-show {
   display: block;
 }
 .modal-booking {

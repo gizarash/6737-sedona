@@ -167,5 +167,36 @@
         </section>
       </div>
     </footer>
+    <script>
+      var hotelBtn = document.querySelector(".btn-hotel");
+      var hotelSearchModal = document.querySelector(".modal-booking");
+      var arriveDateField = hotelSearchModal.querySelector("#arrival_date");
+      var departDateField = hotelSearchModal.querySelector("#departure_date");
+      var adultsCountField = hotelSearchModal.querySelector("#adults_count");
+      var childrenCountField = hotelSearchModal.querySelector("#children_count");
+      var storageAdultsCount = localStorage.getItem("adultsCount");
+      var storageChildrenCount = localStorage.getItem("childrenCount");
+
+      hotelBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        hotelSearchModal.classList.toggle("modal-show");
+        if (storageAdultsCount) {
+          adultsCountField.value = storageAdultsCount;
+        }
+        if (storageChildrenCount) {
+          childrenCountField.value = storageChildrenCount;
+        }
+      });
+
+      hotelSearchModal.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!arriveDateField.value || !departDateField.value || !adultsCountField.value || !childrenCountField.value) {
+          console.log("Need to fill all fields");
+        } else {
+          localStorage.setItem("adultsCount", adultsCountField.value);
+          localStorage.setItem("childrenCount", childrenCountField.value);
+        }
+      });
+    </script>
   </body>
 </html>
