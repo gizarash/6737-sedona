@@ -19,8 +19,8 @@ hotelBtn.addEventListener("click", function (e) {
 });
 
 hotelSearchModal.addEventListener("submit", function (e) {
-  e.preventDefault();
   if (!arriveDateField.value || !departDateField.value || !adultsCountField.value || !childrenCountField.value) {
+    e.preventDefault();
     if (!arriveDateField.value) {
       arriveDateField.classList.add("input-error");
     }
@@ -40,17 +40,17 @@ hotelSearchModal.addEventListener("submit", function (e) {
 });
 
 arriveDateField.addEventListener("focus", function (e) {
-  arriveDateField.classList.remove("input-error");
+  this.classList.remove("input-error");
 });
 
 departDateField.addEventListener("focus", function (e) {
-  departDateField.classList.remove("input-error");
+  this.classList.remove("input-error");
 });
 
 adultsCountField.addEventListener("focus", function (e) {
-  adultsCountField.classList.remove("input-error");
+  this.classList.remove("input-error");
 });
 
 childrenCountField.addEventListener("focus", function (e) {
-  childrenCountField.classList.remove("input-error");
+  this.classList.remove("input-error");
 });
