@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -118,10 +118,10 @@
               и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
           </div>
-          <a class="btn btn-hotel" href="#">Поиск гостиницы в седоне</a>
+          <a class="btn btn-hotel" href="catalog.html">Поиск гостиницы в седоне</a>
         </div>
         <div class="hotels-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d74078.16821524662!2d-111.76579004773627!3d34.86066341666826!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1472664689789" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="map-frame" id="map"></div>
           <form class="modal modal-booking">
             <div class="booking-row">
               <label for="arrival_date">Дата заезда: </label>
@@ -167,6 +167,7 @@
         </section>
       </div>
     </footer>
-    <script src="js/modal-booking.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=l35-knr5HmYC7zuUejFZj-YIIJuv_3li&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=map"></script>
+    <script src="js/modal-booking.min.js"></script>
   </body>
 </html>
