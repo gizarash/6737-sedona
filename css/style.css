@@ -30,7 +30,6 @@ img {
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -71,7 +70,7 @@ img {
   box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.3);
 }
 .sprite {
-    background-image: url('../img/spritesheet.png');
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
 }
@@ -87,15 +86,15 @@ img {
   list-style: none;
 }
 .main-navigation::after {
-  content: '';
+  content: "";
   display: table;
   clear:both;
 }
-.main-navigation .left{
+.main-navigation .left {
   float: left;
   text-align: left;
 }
-.main-navigation .right{
+.main-navigation .right {
   float: right;
   text-align: right;
 }
@@ -142,7 +141,7 @@ img {
   text-align: center;
   line-height: 26px;
 }
-.intro h1{
+.intro h1 {
   margin-bottom: 27px;
   font-size: 21px;
   font-weight: bold;
@@ -158,10 +157,8 @@ img {
   background-color: #eeeeee;
 }
 .reasons {
-  /* for correct form move out animation*/
   position: relative;
-  z-index: 10;
-
+  z-index: 10; /* for correct form move out animation*/
   font-size: 0;
   line-height: 0;
 }
@@ -248,9 +245,8 @@ img {
   background-position: -5px -171px;
 }
 .hotels {
-  /* for correct form move out animation*/
   position: relative;
-  z-index: 10;
+  z-index: 10; /* for correct form move out animation*/
   background: #ffffff;
 }
 .hotels-search {
@@ -303,14 +299,26 @@ img {
 .map-frame {
   width: 1200px;
   height: 593px;
-  background: url("../img/map.jpg") no-repeat 50% 50%;
+  background: #ffffff url("../img/map1.jpg") no-repeat 50% 50%;
 }
-@keyframes form-appear {
-  0%   {
-    transform: translateY(-500px);
+@-webkit-keyframes form-appear {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes form-appear {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .modal {
@@ -318,13 +326,13 @@ img {
 }
 .modal-show {
   display: block;
-  animation-name: form-appear;
-  animation-duration: 1s;
+  -webkit-animation-name: form-appear;
+          animation-name: form-appear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .modal-booking {
-  /* for correct form move out animation*/
-  z-index: 1;
-
+  z-index: 1; /* for correct form move out animation*/
   position: absolute;
   top: 0;
   left: 50%;
@@ -537,12 +545,12 @@ img {
   padding-right: 72px;
   padding-top: 27px;
   box-sizing: border-box;
-  background: url(../img/sedona_blurred.jpg) no-repeat 0 -57px;
+  background: #425464 url("../img/sedona_blurred.jpg") no-repeat 0 -57px;
   background-size: 100%;
   color: #ffffff;
 }
 .filter::after {
-  content: '';
+  content: "";
   display: table;
   clear:both;
 }
@@ -556,15 +564,10 @@ img {
   margin: 0;
   padding: 0;
 }
-.filter ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.filter-infrastructure div, .filter-type div {
+  margin-bottom: 24px;
   font-size: 14px;
   line-height: 21px;
-}
-.filter li {
-  margin-bottom: 24px;
 }
 .filter-infrastructure {
   float: left;
@@ -631,7 +634,8 @@ input[type="checkbox"]:disabled + label::before {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .price-controls label {
   display: inline-block;
@@ -777,7 +781,7 @@ input[type="checkbox"]:disabled + label::before {
   margin-bottom: 0;
 }
 .catalog-item::after {
-  content: '';
+  content: "";
   display: table;
   clear:both;
 }
@@ -792,11 +796,13 @@ input[type="checkbox"]:disabled + label::before {
   float: left;
 }
 .catalog-item-info h2 {
+  max-width: 650px;
   margin: 0;
-  margin-top: -3px;
-  margin-bottom: 8px;
+  margin-top: -5px;
+  margin-bottom: 5px;
   font-size: 21px;
   font-weight: bold;
+  line-height: 26px;
 }
 .catalog-item-link {
   text-decoration: none;

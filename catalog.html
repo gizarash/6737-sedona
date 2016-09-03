@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -33,19 +33,15 @@
       <form class="filter">
         <fieldset class="filter-infrastructure">
           <legend>Инфраструктура:</legend>
-          <ul>
-            <li><input type="checkbox" name="pool" id="chk_pool" checked /><label for="chk_pool">Бассейн</label></li>
-            <li><input type="checkbox" name="parking" id="chk_parking" /><label for="chk_parking">Парковка</label></li>
-            <li><input type="checkbox" name="wifi" id="chk_wifi" /><label for="chk_wifi">Wi-fi</label></li>
-          </ul>
+          <div><input type="checkbox" name="pool" id="chk_pool" checked /><label for="chk_pool">Бассейн</label></div>
+          <div><input type="checkbox" name="parking" id="chk_parking" /><label for="chk_parking">Парковка</label></div>
+          <div><input type="checkbox" name="wifi" id="chk_wifi" /><label for="chk_wifi">Wi-fi</label></div>
         </fieldset>
         <fieldset class="filter-type">
           <legend>Тип жилья:</legend>
-          <ul>
-            <li><input type="checkbox" name="hotel" id="chk_hotel" checked /><label for="chk_hotel">Гостиница</label></li>
-            <li><input type="checkbox" name="motel" id="chk_motel" checked /><label for="chk_motel">Мотель</label></li>
-            <li><input type="checkbox" name="apartments" id="chk_apartments" checked /><label for="chk_apartments">Апартаменты</label></li>
-          </ul>
+          <div><input type="checkbox" name="hotel" id="chk_hotel" checked /><label for="chk_hotel">Гостиница</label></div>
+          <div><input type="checkbox" name="motel" id="chk_motel" checked /><label for="chk_motel">Мотель</label></div>
+          <div><input type="checkbox" name="apartments" id="chk_apartments" checked /><label for="chk_apartments">Апартаменты</label></div>
         </fieldset>
         <fieldset class="filter-range">
           <legend class="filter-range-title">Стоимость в сутки (р):</legend>
