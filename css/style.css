@@ -301,16 +301,6 @@ img {
   height: 593px;
   background: #ffffff url("../img/map1.jpg") no-repeat 50% 50%;
 }
-@-webkit-keyframes form-appear {
-  0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 @keyframes form-appear {
   0% {
     -webkit-transform: translateY(-500px);
