@@ -299,7 +299,7 @@ img {
 .map-frame {
   width: 1200px;
   height: 593px;
-  background: #ffffff url("../img/map1.jpg") no-repeat 50% 50%;
+  background: #ffffff url("../img/map.jpg") no-repeat 50% 50%;
 }
 @keyframes form-appear {
   0% {
@@ -804,6 +804,9 @@ input[type="checkbox"]:disabled + label::before {
 .catalog-item-link:active {
   color: #cacaca;
 }
+.catalog-item-text {
+  margin-bottom: 13px;
+}
 .catalog-item-type, .catalog-item-price {
   display: inline-block;
   vertical-align: top;
@@ -814,9 +817,6 @@ input[type="checkbox"]:disabled + label::before {
   vertical-align: top;
 }
 .catalog-item-buttons {
-  position: absolute;
-  bottom: 30px;
-  left: 237px;
   font-size: 0;
 }
 .catalog-item-buttons .btn {
